@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Club Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="lulu-latte.mp4" type="video/mp4">
+    </video>
+
+    <form id="survey-form" action="index.html" method="post">
+      <header id="intro">
+        <h1 id="title">Dusty's Book Club Feedback</h1>
+        <p id="description">Please give your feedback on our bookclub so we can make it better.</p>
+      </header>
+      <div id="nea">
+        <div class="nea-grp">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="nea-grp">
+          <label for="email">Email</label>
+          <input id="email" type="text" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="nea-grp">
+          <label for="age">Age (optional)</label>
+          <input type="number" name="age" min="18" max="110" placeholder="Enter your age">
+        </div>
+      </div>
+      <div id="midform">
+        <div id="radio-grp">
+          <p>Would you come back again?</p>
+          <input type="radio" id="yes" name="yes" value="yes" checked>
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="no" value="no">
+          <label for="no">No</label>
+          <input type="radio" id="maybe" name="maybe" value="maybe">
+          <label for="maybe">Maybe</label>
+        </div>
+        <div id="dropdown-grp">
+          <p>Favorite Book We Read</p>
+          <select id="dropdown">
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="willows">The Wind in the Willows</option>
+            <option value="catcher">Catcher in the Rye</option>
+            <option value="eye">The Bluest Eye</option>
+            <option value="cathedral">Cathedral</option>
+          </select>
+        </div>
+      </div>
+      <div id="checkbox-grp">
+        <p>Check what snacks you're ok with</p>
+        <input type="checkbox" id="hummus" name="hummus">
+        <label for="hummus">Hummus</label>
+        <input type="checkbox" id="dip" name="dip">
+        <label for="dip">Dip</label>
+        <input type="checkbox" id="cheese" name="cheese">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="cupcakes" name="cupcakes">
+        <label for="cupcakes">Cupcakes</label>
+      </div>
+      <div id="allergies">
+        <p>Let us know if you have any food allergies/comments!</p>
+      <textarea name="allergies" rows="4" cols="50">
+      </textarea>
+      </div>
+      <button id="submit" type="submit" name="button">Submit :)</button>
+    </form>
+  </body>
+</html>
